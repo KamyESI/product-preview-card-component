@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: beige;
+}
+
+.main-container {
+  width: 375px;
+  height: auto;
+  margin: 20px;
+  border-radius: 15px;
+  background-color: white;
+}
+
+img {
+  width: 375px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.details-container {
+  padding: 30px;
+}
+
+.details-container h3 {
+  letter-spacing: 4px;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: hsl(228, 12%, 48%);
+}
+
+.details-container h1,
+.new-price {
+  font-family: "Fraunces", serif;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  line-height: 35px;
+}
+
+.details-container p {
+  font-size: 0.94rem;
+  line-height: 30px;
+  margin-top: 25px;
+}
+
+.text {
+  color: hsl(228, 12%, 48%);
+}
+
+.prices {
+  display: flex;
+}
+
+.new-price {
+  color: rgb(61, 122, 124);
+  margin-right: 20px;
+}
+
+.old-price {
+  text-decoration: line-through;
+}
+
+.button {
+  padding: 15px;
+  background-color: rgb(61, 122, 124);
+  border: none;
+  border-radius: 15px;
+  width: 100%;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.button p {
+  margin-top: 0;
+}
+
+i {
+  margin-right: 15px;
+}
+
+@media all and (min-width: 700px) {
+  .main-container {
+    display: flex;
+    width: 800px;
+  }
+
+  .img-container {
+    width: 50%;
+  }
+
+  img {
+    height: 100%;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0px;
+  }
+}
